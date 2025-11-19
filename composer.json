@@ -1,0 +1,63 @@
+{
+    "name": "davisonpro/mpesa-payment-gateway",
+    "description": "M-Pesa payment gateway for WooCommerce with Blocks support",
+    "type": "wordpress-plugin",
+    "license": "GPL-3.0-or-later",
+    "version": "2.0.0",
+    "homepage": "https://github.com/Davisonpro/mpesa-payment-gateway",
+    "authors": [
+        {
+            "name": "Davison Pro",
+            "email": "hello@davisonpro.dev",
+            "homepage": "https://davisonpro.dev",
+            "role": "Developer"
+        }
+    ],
+    "keywords": [
+        "wordpress",
+        "woocommerce",
+        "mpesa",
+        "payment-gateway",
+        "safaricom",
+        "kenya"
+    ],
+    "support": {
+        "issues": "https://github.com/Davisonpro/mpesa-payment-gateway/issues",
+        "source": "https://github.com/Davisonpro/mpesa-payment-gateway"
+    },
+    "require": {
+        "php": ">=7.4",
+        "composer/installers": "^1.0 || ^2.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0",
+        "squizlabs/php_codesniffer": "^3.6",
+        "phpstan/phpstan": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "WooMpesa\\": "includes/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "WooMpesa\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "phpcs": "phpcs --standard=WordPress includes/",
+        "phpstan": "phpstan analyse includes/",
+        "format": "phpcbf --standard=WordPress includes/"
+    },
+    "config": {
+        "sort-packages": true,
+        "optimize-autoloader": true,
+        "classmap-authoritative": true,
+        "allow-plugins": {
+            "composer/installers": true
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}

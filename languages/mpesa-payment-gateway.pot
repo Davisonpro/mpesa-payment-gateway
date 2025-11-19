@@ -1,0 +1,512 @@
+# Copyright (C) 2025 Davison Pro
+# This file is distributed under the GPL v3 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: M-Pesa Payment Gateway for WooCommerce 2.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/mpesa-payment-gateway\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2025-11-19T07:50:53+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.11.0\n"
+"X-Domain: mpesa-payment-gateway\n"
+
+#. Plugin Name of the plugin
+#: mpesa-payment-gateway.php
+msgid "M-Pesa Payment Gateway for WooCommerce"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: woo-mpesa.php
+msgid "https://github.com/Davisonpro/woo-mpesa"
+msgstr ""
+
+#. Description of the plugin
+#: woo-mpesa.php
+msgid "Seamless M-Pesa payment gateway integration for WooCommerce. Supports STK Push, C2B, and WooCommerce Blocks checkout."
+msgstr ""
+
+#. Author of the plugin
+#: woo-mpesa.php
+msgid "Davison Pro"
+msgstr ""
+
+#. Author URI of the plugin
+#: woo-mpesa.php
+msgid "https://davisonpro.dev"
+msgstr ""
+
+#: includes/Admin/AdminInterface.php:40
+#: includes/Admin/AdminInterface.php:109
+msgid "M-Pesa Transactions"
+msgstr ""
+
+#: includes/Admin/AdminInterface.php:41
+msgid "M-Pesa"
+msgstr ""
+
+#: includes/Admin/AdminInterface.php:76
+msgid "M-Pesa Payment Details"
+msgstr ""
+
+#: includes/Admin/AdminInterface.php:78
+msgid "Merchant Request ID:"
+msgstr ""
+
+#: includes/Admin/AdminInterface.php:83
+msgid "Checkout Request ID:"
+msgstr ""
+
+#: includes/Admin/AdminInterface.php:88
+#: templates/thankyou-page.php:23
+msgid "Phone Number:"
+msgstr ""
+
+#: includes/Admin/AdminInterface.php:93
+msgid "Transaction ID:"
+msgstr ""
+
+#: includes/Admin/AdminInterface.php:110
+msgid "View and manage M-Pesa transactions."
+msgstr ""
+
+#: includes/Admin/AdminInterface.php:115
+msgid "Order ID"
+msgstr ""
+
+#: includes/Admin/AdminInterface.php:116
+msgid "Transaction ID"
+msgstr ""
+
+#: includes/Admin/AdminInterface.php:117
+msgid "Phone"
+msgstr ""
+
+#: includes/Admin/AdminInterface.php:118
+msgid "Amount"
+msgstr ""
+
+#: includes/Admin/AdminInterface.php:119
+msgid "Status"
+msgstr ""
+
+#: includes/Admin/AdminInterface.php:120
+msgid "Date"
+msgstr ""
+
+#: includes/Admin/AdminInterface.php:133
+msgid "No transactions found."
+msgstr ""
+
+#: includes/Blocks/BlocksIntegration.php:107
+#: includes/Gateway/MpesaGateway.php:286
+#: assets/js/blocks/index.js:92
+msgid "M-Pesa Phone Number"
+msgstr ""
+
+#: includes/Blocks/BlocksIntegration.php:108
+#: includes/Gateway/MpesaGateway.php:287
+msgid "e.g. 254712345678"
+msgstr ""
+
+#: includes/Blocks/BlocksIntegration.php:109
+#: includes/Gateway/MpesaGateway.php:357
+#: assets/js/blocks/index.js:218
+msgid "M-Pesa phone number is required."
+msgstr ""
+
+#: includes/Blocks/BlocksIntegration.php:110
+#: assets/js/blocks/index.js:225
+msgid "Please enter a valid M-Pesa phone number."
+msgstr ""
+
+#: includes/Core/Config.php:133
+msgid "Unknown Error"
+msgstr ""
+
+#. translators: %s: Plugin documentation link
+#: includes/Core/ServiceContainer.php:203
+msgid "Thank you for installing M-Pesa Payment Gateway! %s"
+msgstr ""
+
+#: includes/Core/ServiceContainer.php:207
+msgid "Configure settings"
+msgstr ""
+
+#. translators: 1: Transaction ID, 2: Phone number
+#: includes/Gateway/CallbackHandler.php:130
+msgid "M-Pesa payment received. Transaction ID: %1$s, Phone: %2$s"
+msgstr ""
+
+#. translators: 1: Expected amount, 2: Received amount, 3: Shortage amount, 4: Transaction ID
+#: includes/Gateway/CallbackHandler.php:142
+msgid "Partial M-Pesa payment received. Expected: %1$s, Received: %2$s, Shortage: %3$s. Transaction ID: %4$s"
+msgstr ""
+
+#. translators: 1: Expected amount, 2: Received amount, 3: Excess amount, 4: Transaction ID
+#: includes/Gateway/CallbackHandler.php:155
+msgid "M-Pesa payment received with overpayment. Expected: %1$s, Received: %2$s, Excess: %3$s. Transaction ID: %4$s"
+msgstr ""
+
+#. translators: 1: Transaction ID, 2: Amount, 3: Phone number
+#: includes/Gateway/CallbackHandler.php:221
+msgid "M-Pesa payment completed. Transaction ID: %1$s, Amount: %2$s, Phone: %3$s"
+msgstr ""
+
+#. translators: 1: Error code, 2: Error message
+#: includes/Gateway/CallbackHandler.php:247
+msgid "M-Pesa payment failed. Code: %1$d, Message: %2$s"
+msgstr ""
+
+#: includes/Gateway/MpesaGateway.php:68
+#: includes/Gateway/MpesaGateway.php:126
+#: assets/js/blocks/index.js:298
+#: assets/js/blocks/index.js:330
+msgid "Lipa Na M-Pesa"
+msgstr ""
+
+#: includes/Gateway/MpesaGateway.php:69
+msgid "Accept M-Pesa payments via Safaricom Daraja API"
+msgstr ""
+
+#: includes/Gateway/MpesaGateway.php:117
+msgid "Enable/Disable"
+msgstr ""
+
+#: includes/Gateway/MpesaGateway.php:119
+msgid "Enable M-Pesa Payment Gateway"
+msgstr ""
+
+#: includes/Gateway/MpesaGateway.php:123
+msgid "Title"
+msgstr ""
+
+#: includes/Gateway/MpesaGateway.php:125
+msgid "Payment method title shown to customers during checkout."
+msgstr ""
+
+#: includes/Gateway/MpesaGateway.php:130
+msgid "Description"
+msgstr ""
+
+#: includes/Gateway/MpesaGateway.php:132
+msgid "Payment method description shown to customers during checkout."
+msgstr ""
+
+#: includes/Gateway/MpesaGateway.php:133
+msgid "Pay securely using your M-Pesa mobile money account."
+msgstr ""
+
+#: includes/Gateway/MpesaGateway.php:137
+msgid "Environment Settings"
+msgstr ""
+
+#: includes/Gateway/MpesaGateway.php:139
+msgid "Configure your M-Pesa environment settings."
+msgstr ""
+
+#: includes/Gateway/MpesaGateway.php:142
+msgid "Environment"
+msgstr ""
+
+#: includes/Gateway/MpesaGateway.php:145
+msgid "Sandbox"
+msgstr ""
+
+#: includes/Gateway/MpesaGateway.php:146
+msgid "Live"
+msgstr ""
+
+#: includes/Gateway/MpesaGateway.php:150
+msgid "Select sandbox for testing or live for production."
+msgstr ""
+
+#: includes/Gateway/MpesaGateway.php:153
+msgid "Business Type"
+msgstr ""
+
+#: includes/Gateway/MpesaGateway.php:156
+msgid "Paybill"
+msgstr ""
+
+#: includes/Gateway/MpesaGateway.php:157
+msgid "Till Number"
+msgstr ""
+
+#: includes/Gateway/MpesaGateway.php:161
+msgid "Select your M-Pesa business type."
+msgstr ""
+
+#: includes/Gateway/MpesaGateway.php:164
+msgid "API Credentials"
+msgstr ""
+
+#: includes/Gateway/MpesaGateway.php:166
+msgid "Enter your Daraja API credentials. Get them from <a href=\"https://developer.safaricom.co.ke\" target=\"_blank\">Safaricom Developer Portal</a>."
+msgstr ""
+
+#: includes/Gateway/MpesaGateway.php:169
+msgid "Business Shortcode"
+msgstr ""
+
+#: includes/Gateway/MpesaGateway.php:171
+msgid "Your M-Pesa business shortcode (Paybill or Till number)."
+msgstr ""
+
+#: includes/Gateway/MpesaGateway.php:176
+msgid "Consumer Key"
+msgstr ""
+
+#: includes/Gateway/MpesaGateway.php:178
+msgid "Your Daraja API consumer key."
+msgstr ""
+
+#: includes/Gateway/MpesaGateway.php:183
+msgid "Consumer Secret"
+msgstr ""
+
+#: includes/Gateway/MpesaGateway.php:185
+msgid "Your Daraja API consumer secret."
+msgstr ""
+
+#: includes/Gateway/MpesaGateway.php:190
+msgid "Passkey"
+msgstr ""
+
+#: includes/Gateway/MpesaGateway.php:192
+msgid "Your Lipa Na M-Pesa Online passkey."
+msgstr ""
+
+#: includes/Gateway/MpesaGateway.php:198
+msgid "Webhook Signature"
+msgstr ""
+
+#: includes/Gateway/MpesaGateway.php:200
+msgid "Webhook security signature. Keep this secret."
+msgstr ""
+
+#: includes/Gateway/MpesaGateway.php:205
+msgid "Advanced Options"
+msgstr ""
+
+#: includes/Gateway/MpesaGateway.php:209
+msgid "Order Status on Payment"
+msgstr ""
+
+#: includes/Gateway/MpesaGateway.php:212
+msgid "Completed"
+msgstr ""
+
+#: includes/Gateway/MpesaGateway.php:213
+msgid "Processing"
+msgstr ""
+
+#: includes/Gateway/MpesaGateway.php:214
+msgid "On Hold"
+msgstr ""
+
+#: includes/Gateway/MpesaGateway.php:217
+msgid "Order status after successful payment."
+msgstr ""
+
+#: includes/Gateway/MpesaGateway.php:221
+msgid "Enable C2B"
+msgstr ""
+
+#: includes/Gateway/MpesaGateway.php:223
+msgid "Enable manual M-Pesa payments (C2B)"
+msgstr ""
+
+#: includes/Gateway/MpesaGateway.php:225
+msgid "Allows customers to manually send money via M-Pesa."
+msgstr ""
+
+#: includes/Gateway/MpesaGateway.php:228
+msgid "Enable Reversals"
+msgstr ""
+
+#: includes/Gateway/MpesaGateway.php:230
+msgid "Enable automatic transaction reversals"
+msgstr ""
+
+#: includes/Gateway/MpesaGateway.php:234
+msgid "Debug Mode"
+msgstr ""
+
+#: includes/Gateway/MpesaGateway.php:236
+msgid "Enable debug logging"
+msgstr ""
+
+#. translators: %s: Log file path
+#: includes/Gateway/MpesaGateway.php:240
+msgid "Log M-Pesa events. Logs can be found in %s"
+msgstr ""
+
+#: includes/Gateway/MpesaGateway.php:245
+#: includes/Gateway/MpesaGateway.php:332
+msgid "Currency Conversion"
+msgstr ""
+
+#: includes/Gateway/MpesaGateway.php:247
+msgid "M-Pesa only accepts payments in KES. Configure how other currencies should be converted."
+msgstr ""
+
+#: includes/Gateway/MpesaGateway.php:250
+msgid "Auto Exchange Rates"
+msgstr ""
+
+#: includes/Gateway/MpesaGateway.php:252
+msgid "Automatically fetch current exchange rates"
+msgstr ""
+
+#: includes/Gateway/MpesaGateway.php:254
+msgid "Automatically fetch and update exchange rates every 6 hours. Recommended for accurate conversions."
+msgstr ""
+
+#: includes/Gateway/MpesaGateway.php:257
+msgid "Exchange Rates"
+msgstr ""
+
+#: includes/Gateway/MpesaGateway.php:259
+msgid "Enter exchange rates (one per line) in format: <strong>CURRENCY=RATE</strong><br>Example:<br><code>USD=130.50<br>EUR=140.25<br>GBP=165.80<br>TZS=0.055<br>UGX=0.035<br>ZAR=7.50</code><br>Rate = How many KES for 1 unit of currency. Used when auto rates are disabled or unavailable."
+msgstr ""
+
+#: includes/Gateway/MpesaGateway.php:325
+#: assets/js/blocks/index.js:150
+msgid "Currency Conversion Required"
+msgstr ""
+
+#. translators: 1: Original amount with currency, 2: KES amount, 3: Currency code, 4: Exchange rate
+#: includes/Gateway/MpesaGateway.php:335
+#: assets/js/blocks/index.js:173
+msgid "Your order total of %1$s will be charged as KES %2$s (Rate: 1 %3$s = %4$s KES)"
+msgstr ""
+
+#: includes/Gateway/MpesaGateway.php:365
+msgid "Please enter a valid M-Pesa phone number (e.g. 254712345678)."
+msgstr ""
+
+#: includes/Gateway/MpesaGateway.php:385
+msgid "Invalid order."
+msgstr ""
+
+#. translators: 1: Original amount, 2: Original currency, 3: KES amount, 4: Exchange rate
+#: includes/Gateway/MpesaGateway.php:411
+msgid "Currency converted: %1$s %2$s → KES %3$s (Rate: %4$s)"
+msgstr ""
+
+#. translators: %s: Order ID
+#: includes/Gateway/MpesaGateway.php:428
+msgid "Order #%s"
+msgstr ""
+
+#: includes/Gateway/MpesaGateway.php:442
+msgid "Unknown error"
+msgstr ""
+
+#. translators: 1: Phone number, 2: Merchant Request ID
+#: includes/Gateway/MpesaGateway.php:457
+msgid "M-Pesa STK push sent to %1$s. Merchant Request ID: %2$s"
+msgstr ""
+
+#: includes/Gateway/MpesaGateway.php:471
+msgid "Failed to initiate payment."
+msgstr ""
+
+#. translators: %s: Error message
+#: includes/Gateway/MpesaGateway.php:508
+msgid "Payment Error: %s"
+msgstr ""
+
+#: includes/Gateway/MpesaGateway.php:535
+msgid "Your payment has been received. Thank you for your purchase!"
+msgstr ""
+
+#: includes/Gateway/MpesaGateway.php:558
+msgid "M-Pesa Transaction ID:"
+msgstr ""
+
+#: includes/Hooks/HookManager.php:79
+msgid "Settings"
+msgstr ""
+
+#: includes/Hooks/HookManager.php:82
+msgid "Documentation"
+msgstr ""
+
+#. translators: %s: Currency code
+#: includes/Services/CurrencyConverter.php:72
+msgid "Invalid exchange rate for %s to KES"
+msgstr ""
+
+#. translators: %s: Currency code
+#: includes/Services/CurrencyConverter.php:128
+msgid "No exchange rate found for %s to KES. Please configure exchange rates in M-Pesa settings."
+msgstr ""
+
+#: includes/Services/CurrencyConverter.php:211
+msgid "Failed to fetch exchange rate from API"
+msgstr ""
+
+#: includes/Services/CurrencyConverter.php:290
+msgid "Invalid amount for currency conversion"
+msgstr ""
+
+#: includes/Services/MpesaApiService.php:111
+msgid "Failed to retrieve access token"
+msgstr ""
+
+#. translators: %s: Site name
+#: includes/Services/MpesaApiService.php:166
+msgid "Payment for %s"
+msgstr ""
+
+#: includes/Services/MpesaApiService.php:323
+msgid "Transaction reversal"
+msgstr ""
+
+#: templates/thankyou-page.php:18
+msgid "M-Pesa Payment Pending"
+msgstr ""
+
+#: templates/thankyou-page.php:20
+msgid "A payment request has been sent to your phone. Please check your phone and enter your M-Pesa PIN to complete the payment."
+msgstr ""
+
+#: templates/thankyou-page.php:27
+msgid "Request ID:"
+msgstr ""
+
+#: templates/thankyou-page.php:30
+msgid "Once you complete the payment, this page will update automatically. If you did not receive the prompt, please wait a moment and refresh this page."
+msgstr ""
+
+#. translators: 1: Required PHP version, 2: Current PHP version
+#: woo-mpesa.php:139
+msgid "M-Pesa Payment Gateway requires PHP version %1$s or higher. You are running version %2$s."
+msgstr ""
+
+#. translators: 1: Required WordPress version, 2: Current WordPress version
+#: woo-mpesa.php:156
+msgid "M-Pesa Payment Gateway requires WordPress version %1$s or higher. You are running version %2$s."
+msgstr ""
+
+#: woo-mpesa.php:170
+msgid "M-Pesa Payment Gateway requires WooCommerce to be installed and activated."
+msgstr ""
+
+#. translators: 1: Required WooCommerce version, 2: Current WooCommerce version
+#: woo-mpesa.php:183
+msgid "M-Pesa Payment Gateway requires WooCommerce version %1$s or higher. You are running version %2$s."
+msgstr ""
+
+#: woo-mpesa.php:286
+msgid "Please install and activate WooCommerce before activating M-Pesa Payment Gateway."
+msgstr ""
+
+#: woo-mpesa.php:287
+msgid "Plugin Activation Error"
+msgstr ""

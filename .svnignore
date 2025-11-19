@@ -1,0 +1,49 @@
+# Development files
+node_modules/
+vendor/
+.git/
+.github/
+.vscode/
+.idea/
+
+# Build files
+dist/
+*.map
+*.log
+
+# Development config
+composer.json
+composer.lock
+package.json
+package-lock.json
+phpcs.xml
+phpstan.neon
+.phpcs.xml.dist
+
+# Documentation
+BUILD.md
+CONTRIBUTING.md
+
+# Scripts
+scripts/
+
+# Tests
+tests/
+phpunit.xml
+.phpunit.result.cache
+
+# OS files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# IDE files
+*.sublime-project
+*.sublime-workspace
+
+# Temporary files
+*.tmp
+*.bak
+

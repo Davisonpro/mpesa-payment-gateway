@@ -1,0 +1,60 @@
+# Dependencies
+/vendor/
+/node_modules/
+
+# Package managers
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Build files
+*.min.js
+*.min.css
+*.map
+/build/
+/dist/
+*.zip
+
+# IDE files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+Thumbs.db
+
+# Log files
+*.log
+error_log
+debug.log
+
+# Environment files
+.env
+.env.local
+
+# Composer
+composer.lock
+
+# WordPress
+wp-config.php
+.htaccess
+
+# Testing
+/tests/coverage/
+.phpunit.result.cache
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# Production
+/build/
+/dist/
+
+# Certificates (should be deployed separately)
+/includes/certificates/live/*.cer
+/includes/certificates/live/*.pem
+

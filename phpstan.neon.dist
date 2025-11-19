@@ -1,0 +1,48 @@
+parameters:
+    level: 8
+    
+    paths:
+        - includes/
+    
+    excludePaths:
+        - includes/Admin/AdminInterface.php
+        - vendor/
+        - node_modules/
+        - tests/
+    
+    bootstrapFiles:
+        - vendor/autoload.php
+    
+    # Ignore WordPress and WooCommerce functions/classes
+    ignoreErrors:
+        # WordPress functions
+        - '#Function (get_option|update_option|delete_option|add_action|do_action|add_filter|apply_filters) not found#'
+        - '#Function (wp_send_json|wp_die|is_wp_error|sanitize_text_field|esc_html|esc_attr|esc_url|__) not found#'
+        - '#Function (get_transient|set_transient|delete_transient) not found#'
+        - '#Function (current_user_can|load_plugin_textdomain|plugin_dir_path|plugin_dir_url|plugin_basename) not found#'
+        - '#Function (register_activation_hook|register_deactivation_hook|flush_rewrite_rules) not found#'
+        - '#Function (wc_add_notice|wc_get_log_file_path|wc_get_order|wc_get_logger) not found#'
+        
+        # WordPress classes
+        - '#Class (WP_Error|WC_Payment_Gateway|WC_Order|WC_Logger|WC_Data) not found#'
+        - '#Class Automattic\\WooCommerce\\.+ not found#'
+        
+        # Dynamic properties (WordPress/WooCommerce uses them)
+        - '#Access to an undefined property WC_Order#'
+        - '#Access to an undefined property WC_Payment_Gateway#'
+        
+        # Mixed types from WordPress
+        - '#Method .+::.+ has parameter .+ with no type specified#'
+        - '#Method .+::.+ has no return type specified#'
+        - '#Property .+::.+ has no type specified#'
+    
+    # Custom rules
+    checkMissingIterableValueType: false
+    checkGenericClassInNonGenericObjectType: false
+    
+    # Treat missing classes as soft errors (don't fail)
+    reportUnmatchedIgnoredErrors: false
+    
+    # Memory limit
+    memoryLimit: 512M
+

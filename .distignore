@@ -1,0 +1,48 @@
+# Development files (excluded from distribution)
+.git
+.gitignore
+.gitattributes
+.github
+.svnignore
+.DS_Store
+Thumbs.db
+
+# Build tools
+phpcs.xml.dist
+phpcs.xml
+phpstan.neon.dist
+phpstan.neon
+.phpcs.xml.dist
+phpunit.xml
+.phpunit.result.cache
+
+# Dependencies
+composer.json
+composer.lock
+package.json
+package-lock.json
+node_modules
+vendor
+
+# Build artifacts
+dist
+build
+*.log
+
+# Documentation (keep only essential)
+BUILD.md
+CONTRIBUTING.md
+CRITICAL-SLUG-ISSUE.md
+
+# IDE
+.vscode
+.idea
+*.sublime-project
+*.sublime-workspace
+
+# Scripts
+scripts
+
+# Tests
+tests
+
