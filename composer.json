@@ -2,7 +2,7 @@
     "name": "davisonpro/mpesa-payment-gateway",
     "description": "M-Pesa payment gateway for WooCommerce with Blocks support",
     "type": "wordpress-plugin",
-    "license": "GPL-3.0-or-later",
+    "license": "GPL-2.0-or-later",
     "version": "2.0.0",
     "homepage": "https://github.com/Davisonpro/mpesa-payment-gateway",
     "authors": [

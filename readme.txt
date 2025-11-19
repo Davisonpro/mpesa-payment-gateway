@@ -5,8 +5,8 @@ Requires at least: 5.8
 Tested up to: 6.8
 Requires PHP: 7.4
 Stable tag: 2.0.0
-License: GPLv3 or later
-License URI: https://www.gnu.org/licenses/gpl-3.0.html
+License: GPLv2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
 Seamless M-Pesa payment gateway for WooCommerce with STK Push, C2B payments, and WooCommerce Blocks support.
 
