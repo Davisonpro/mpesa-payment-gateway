@@ -42,6 +42,21 @@ const excludePatterns = [
     '**/*.md.backup',
     'vendor/bin/**',
     'vendor/composer/installers/**',
+    'vendor/phpstan/**',
+    'vendor/squizlabs/**',
+    'vendor/phpunit/**',
+    'vendor/doctrine/**',
+    'vendor/myclabs/**',
+    'vendor/nikic/**',
+    'vendor/phar-io/**',
+    'vendor/sebastian/**',
+    'vendor/theseer/**',
+    '**/*.phar',
+    '**/*.phar.asc',
+    '**/phpstan',
+    '**/phpcs',
+    '**/phpcbf',
+    '**/phpunit',
 ];
 
 console.log('🚀 Building plugin package...\n');
