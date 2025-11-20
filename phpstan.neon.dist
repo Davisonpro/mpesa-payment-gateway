@@ -42,7 +42,4 @@ parameters:
     
     # Treat missing classes as soft errors (don't fail)
     reportUnmatchedIgnoredErrors: false
-    
-    # Memory limit
-    memoryLimit: 512M
 
