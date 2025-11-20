@@ -70,13 +70,13 @@ const PhoneInput = ({ value, onChange, onBlur, hasError }) => {
     return createElement(
         'div',
         { 
-            className: 'wc-block-components-text-input mpesa-payment-gateway-phone-input',
+            className: 'wc-block-components-text-input woocommerce-mpesa-payment-gateway-phone-input',
             style: { marginTop: '1rem' }
         },
         createElement(
             'label',
             { 
-                htmlFor: 'mpesa-payment-gateway-phone',
+                htmlFor: 'woocommerce-mpesa-payment-gateway-phone',
                 className: 'wc-block-components-text-input__label',
                 style: {
                     display: 'block',
@@ -95,7 +95,7 @@ const PhoneInput = ({ value, onChange, onBlur, hasError }) => {
             'input',
             {
                 type: 'tel',
-                id: 'mpesa-payment-gateway-phone',
+                id: 'woocommerce-mpesa-payment-gateway-phone',
                 className: inputClass,
                 value: value,
                 onChange: handleInput,
@@ -265,7 +265,7 @@ const Content = (props) => {
 
     return createElement(
         'div',
-        { className: 'mpesa-payment-gateway-payment-content' },
+        { className: 'woocommerce-mpesa-payment-gateway-payment-content' },
         settings.description && createElement(
             'p',
             {
@@ -300,7 +300,7 @@ const Label = (props) => {
     return createElement(
         'span',
         { 
-            className: 'mpesa-payment-gateway-label', 
+            className: 'woocommerce-mpesa-payment-gateway-label', 
             style: { 
                 display: 'flex', 
                 alignItems: 'center', 

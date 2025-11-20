@@ -280,7 +280,7 @@ final class MpesaGateway extends WC_Payment_Gateway
         // Show currency conversion info if applicable
         $this->displayCurrencyConversionNotice();
 
-        echo '<div class="mpesa-payment-gateway-payment-fields">';
+        echo '<div class="woocommerce-mpesa-payment-gateway-payment-fields">';
         woocommerce_form_field('billing_mpesa_phone', [
             'type' => 'tel',
             'required' => true,

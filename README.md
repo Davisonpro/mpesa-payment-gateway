@@ -75,16 +75,16 @@ This plugin integrates Safaricom's M-Pesa mobile payment service with WooCommerc
 ### Via Composer
 
 ```bash
-composer require davisonpro/mpesa-payment-gateway
+composer require davisonpro/woocommerce-mpesa-payment-gateway
 ```
 
 ### Manual Installation
 
 1. Download the plugin from [GitHub](https://github.com/Davisonpro/woocommerce-mpesa-payment-gateway)
-2. Upload to `/wp-content/plugins/mpesa-payment-gateway`
+2. Upload to `/wp-content/plugins/woocommerce-mpesa-payment-gateway`
 3. Navigate to the plugin directory:
    ```bash
-   cd wp-content/plugins/mpesa-payment-gateway
+   cd wp-content/plugins/woocommerce-mpesa-payment-gateway
    composer install --no-dev --optimize-autoloader
    ```
 4. Activate the plugin in WordPress admin
@@ -270,7 +270,7 @@ woocommerce-mpesa-payment-gateway/
 
 ```bash
 git clone https://github.com/Davisonpro/woocommerce-mpesa-payment-gateway.git
-cd mpesa-payment-gateway
+cd woocommerce-mpesa-payment-gateway
 composer install
 npm install
 ```
@@ -281,7 +281,7 @@ npm install
 # Build distributable zip file
 npm run build
 
-# Output: dist/mpesa-payment-gateway-2.0.0.zip
+# Output: dist/woocommerce-mpesa-payment-gateway-2.0.0.zip
 ```
 
 See [BUILD.md](BUILD.md) for detailed build instructions.
@@ -336,7 +336,7 @@ composer format
 ### Debug Logs
 
 Enable debug mode in settings, then view logs at:
-**WooCommerce → Status → Logs** (select `mpesa-payment-gateway-*` log file)
+**WooCommerce → Status → Logs** (select `woocommerce-mpesa-payment-gateway-*` log file)
 
 ## Contributing
 

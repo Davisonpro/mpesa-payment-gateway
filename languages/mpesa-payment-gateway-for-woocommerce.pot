@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: M-Pesa Payment Gateway for WooCommerce 2.0.0\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/mpesa-payment-gateway\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/woocommerce-mpesa-payment-gateway\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -12,7 +12,7 @@ msgstr ""
 "POT-Creation-Date: 2025-11-19T07:50:53+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.11.0\n"
-"X-Domain: mpesa-payment-gateway\n"
+"X-Domain: woocommerce-mpesa-payment-gateway\n"
 
 #. Plugin Name of the plugin
 #: woocommerce-mpesa-payment-gateway.php

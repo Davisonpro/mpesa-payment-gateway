@@ -98,14 +98,14 @@ final class HookManager
         }
 
         wp_enqueue_style(
-            'mpesa-payment-gateway-checkout',
+            'woocommerce-mpesa-payment-gateway-checkout',
             WOO_MPESA_URL . 'assets/css/checkout.css',
             [],
             WOO_MPESA_VERSION
         );
 
         wp_enqueue_script(
-            'mpesa-payment-gateway-checkout',
+            'woocommerce-mpesa-payment-gateway-checkout',
             WOO_MPESA_URL . 'assets/js/checkout.js',
             ['jquery'],
             WOO_MPESA_VERSION,
@@ -124,7 +124,7 @@ final class HookManager
 
         if ($screen && strpos($screen->id, 'wc-settings') !== false) {
             wp_enqueue_style(
-                'mpesa-payment-gateway-admin',
+                'woocommerce-mpesa-payment-gateway-admin',
                 WOO_MPESA_URL . 'assets/css/admin.css',
                 [],
                 WOO_MPESA_VERSION

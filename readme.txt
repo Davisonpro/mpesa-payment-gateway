@@ -139,7 +139,7 @@ Yes, enable "Transaction Reversals" in settings. Refunds initiated from WooComme
 
 = Where can I view transaction logs? =
 
-Enable debug mode in the plugin settings, then go to **WooCommerce → Status → Logs** and select the `mpesa-payment-gateway-*` log file.
+Enable debug mode in the plugin settings, then go to **WooCommerce → Status → Logs** and select the `woocommerce-mpesa-payment-gateway-*` log file.
 
 = What about security? =
 

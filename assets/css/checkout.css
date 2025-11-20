@@ -7,12 +7,12 @@
  */
 
 /* Payment fields container */
-.mpesa-payment-gateway-payment-fields {
+.woocommerce-mpesa-payment-gateway-payment-fields {
     margin: 1rem 0;
 }
 
 /* Phone input styling */
-.mpesa-payment-gateway-payment-fields input[type="tel"] {
+.woocommerce-mpesa-payment-gateway-payment-fields input[type="tel"] {
     width: 100%;
     padding: 0.75rem;
     font-size: 16px;
@@ -22,13 +22,13 @@
     transition: border-color 0.2s ease;
 }
 
-.mpesa-payment-gateway-payment-fields input[type="tel"]:focus {
+.woocommerce-mpesa-payment-gateway-payment-fields input[type="tel"]:focus {
     outline: none;
     border-color: #007cba;
     box-shadow: 0 0 0 1px #007cba;
 }
 
-.mpesa-payment-gateway-payment-fields input[type="tel"].woocommerce-invalid {
+.woocommerce-mpesa-payment-gateway-payment-fields input[type="tel"].woocommerce-invalid {
     border-color: #cc1818;
 }
 
@@ -36,7 +36,7 @@
    Blocks Checkout Styles
    ============================================ */
 
-.mpesa-payment-gateway-phone-input {
+.woocommerce-mpesa-payment-gateway-phone-input {
     margin-top: 1rem;
 }
 
@@ -46,9 +46,9 @@
  * Prevents WooCommerce Blocks from floating labels over inputs
  * Forces label to display above the input field with proper spacing
  */
-.mpesa-payment-gateway-phone-input label,
+.woocommerce-mpesa-payment-gateway-phone-input label,
 .wc-block-components-text-input label,
-.mpesa-payment-gateway-payment-content .wc-block-components-text-input label {
+.woocommerce-mpesa-payment-gateway-payment-content .wc-block-components-text-input label {
     display: block !important;
     margin-bottom: 0.5rem !important;
     font-size: 14px !important;
@@ -61,17 +61,17 @@
     left: auto !important;
 }
 
-.mpesa-payment-gateway-phone-input input.has-error {
+.woocommerce-mpesa-payment-gateway-phone-input input.has-error {
     border-color: #cc1818 !important;
 }
 
 /* Ensure proper spacing in Blocks checkout */
-.mpesa-payment-gateway-payment-content .wc-block-components-text-input {
+.woocommerce-mpesa-payment-gateway-payment-content .wc-block-components-text-input {
     margin-top: 1rem;
     position: relative;
 }
 
-.mpesa-payment-gateway-payment-content .wc-block-components-text-input__input {
+.woocommerce-mpesa-payment-gateway-payment-content .wc-block-components-text-input__input {
     width: 100% !important;
     padding: 0.75rem !important;
     font-size: 16px !important;
@@ -82,24 +82,24 @@
     transition: border-color 0.2s ease;
 }
 
-.mpesa-payment-gateway-payment-content .wc-block-components-text-input__input:focus {
+.woocommerce-mpesa-payment-gateway-payment-content .wc-block-components-text-input__input:focus {
     outline: none;
     border-color: #007cba !important;
     box-shadow: 0 0 0 1px #007cba;
 }
 
-.mpesa-payment-gateway-payment-content .wc-block-components-text-input__input::placeholder {
+.woocommerce-mpesa-payment-gateway-payment-content .wc-block-components-text-input__input::placeholder {
     color: #999;
     opacity: 1;
 }
 
 /* Error state for Blocks */
-.mpesa-payment-gateway-payment-content .wc-block-components-text-input.has-error .wc-block-components-text-input__input {
+.woocommerce-mpesa-payment-gateway-payment-content .wc-block-components-text-input.has-error .wc-block-components-text-input__input {
     border-color: #cc1818 !important;
 }
 
 /* Thank you page */
-.mpesa-payment-gateway-thank-you {
+.woocommerce-mpesa-payment-gateway-thank-you {
     background: #f8f9fa;
     border: 1px solid #e1e1e1;
     border-radius: 4px;
@@ -107,17 +107,17 @@
     margin: 1rem 0;
 }
 
-.mpesa-payment-gateway-thank-you h3 {
+.woocommerce-mpesa-payment-gateway-thank-you h3 {
     margin-top: 0;
     color: #00a32a;
 }
 
-.mpesa-payment-gateway-thank-you p {
+.woocommerce-mpesa-payment-gateway-thank-you p {
     margin: 0.5rem 0;
     line-height: 1.6;
 }
 
-.mpesa-payment-gateway-thank-you code {
+.woocommerce-mpesa-payment-gateway-thank-you code {
     background: #fff;
     padding: 0.25rem 0.5rem;
     border-radius: 3px;
@@ -125,7 +125,7 @@
 }
 
 /* Loading spinner */
-.mpesa-payment-gateway-loading {
+.woocommerce-mpesa-payment-gateway-loading {
     display: inline-block;
     width: 20px;
     height: 20px;
@@ -135,25 +135,25 @@
     animation: mpesa-payment-gateway-spin 1s ease-in-out infinite;
 }
 
-@keyframes mpesa-payment-gateway-spin {
+@keyframes-spin {
     to { transform: rotate(360deg); }
 }
 
 /* Mobile responsive */
 @media (max-width: 768px) {
-    .mpesa-payment-gateway-payment-fields input[type="tel"],
-    .mpesa-payment-gateway-phone-input input {
+    .woocommerce-mpesa-payment-gateway-payment-fields input[type="tel"],
+    .woocommerce-mpesa-payment-gateway-phone-input input {
         font-size: 16px !important; /* Prevent zoom on iOS */
     }
     
-    .mpesa-payment-gateway-thank-you {
+    .woocommerce-mpesa-payment-gateway-thank-you {
         padding: 1rem;
     }
 }
 
 /* RTL Support */
-[dir="rtl"] .mpesa-payment-gateway-phone-input label,
-[dir="rtl"] .mpesa-payment-gateway-thank-you {
+[dir="rtl"] .woocommerce-mpesa-payment-gateway-phone-input label,
+[dir="rtl"] .woocommerce-mpesa-payment-gateway-thank-you {
     text-align: right;
 }
 

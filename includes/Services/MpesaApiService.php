@@ -1,4 +1,5 @@
 <?php
+
 /**
  * M-Pesa API Service
  * 
@@ -79,7 +80,7 @@ final class MpesaApiService
         }
 
         $url = Config::getApiEndpoint($this->config['env'], 'oauth');
-        
+
         $response = wp_remote_get($url, [
             'headers' => [
                 'Authorization' => 'Basic ' . base64_encode(
@@ -132,7 +133,7 @@ final class MpesaApiService
         string $description = ''
     ) {
         $token = $this->getAccessToken();
-        
+
         if (is_wp_error($token)) {
             return $token;
         }
@@ -145,15 +146,15 @@ final class MpesaApiService
 
         $callbackUrl = add_query_arg(
             ['action' => 'reconcile', 'order' => $reference],
-            home_url('/wc-api/mpesa-payment-gateway')
+            home_url('/wc-api/woocommerce-mpesa-payment-gateway')
         );
 
         $payload = [
             'BusinessShortCode' => $this->config['shortcode'],
             'Password' => $password,
             'Timestamp' => $timestamp,
-            'TransactionType' => $this->config['type'] === Config::TRANSACTION_TYPES['TILL'] 
-                ? 'CustomerBuyGoodsOnline' 
+            'TransactionType' => $this->config['type'] === Config::TRANSACTION_TYPES['TILL']
+                ? 'CustomerBuyGoodsOnline'
                 : 'CustomerPayBillOnline',
             'Amount' => (int) ceil($amount),
             'PartyA' => $phone,
@@ -201,7 +202,7 @@ final class MpesaApiService
     public function stkQuery(string $checkoutRequestId)
     {
         $token = $this->getAccessToken();
-        
+
         if (is_wp_error($token)) {
             return $token;
         }
@@ -252,7 +253,7 @@ final class MpesaApiService
     public function registerC2BUrls(string $validationUrl, string $confirmationUrl)
     {
         $token = $this->getAccessToken();
-        
+
         if (is_wp_error($token)) {
             return $token;
         }
@@ -302,7 +303,7 @@ final class MpesaApiService
         string $remarks = ''
     ) {
         $token = $this->getAccessToken();
-        
+
         if (is_wp_error($token)) {
             return $token;
         }
@@ -318,8 +319,8 @@ final class MpesaApiService
             'Amount' => (int) ceil($amount),
             'ReceiverParty' => $this->config['shortcode'],
             'RecieverIdentifierType' => $this->config['type'],
-            'ResultURL' => home_url('/wc-api/mpesa-payment-gateway?action=reversal_result'),
-            'QueueTimeOutURL' => home_url('/wc-api/mpesa-payment-gateway?action=reversal_timeout'),
+            'ResultURL' => home_url('/wc-api/woocommerce-mpesa-payment-gateway?action=reversal_result'),
+            'QueueTimeOutURL' => home_url('/wc-api/woocommerce-mpesa-payment-gateway?action=reversal_timeout'),
             'Remarks' => $remarks ?: __('Transaction reversal', 'woocommerce-mpesa-payment-gateway'),
             'Occasion' => '',
         ];
@@ -391,4 +392,3 @@ final class MpesaApiService
         return hash_equals($calculatedSignature, $signature);
     }
 }
-

@@ -40,7 +40,7 @@ final class AdminInterface
             __('M-Pesa Transactions', 'woocommerce-mpesa-payment-gateway'),
             __('M-Pesa', 'woocommerce-mpesa-payment-gateway'),
             'manage_woocommerce',
-            'mpesa-payment-gateway-transactions',
+            'woocommerce-mpesa-payment-gateway-transactions',
             [$this, 'renderTransactionsPage']
         );
     }
@@ -53,7 +53,7 @@ final class AdminInterface
     public function registerSettings(): void
     {
         register_setting(
-            'mpesa-payment-gateway-settings',
+            'woocommerce-mpesa-payment-gateway-settings',
             'woo_mpesa_options',
             [
                 'sanitize_callback' => [$this, 'sanitizeSettings'],
