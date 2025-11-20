@@ -82,7 +82,7 @@ If you prefer to build manually:
 
 ```bash
 # 1. Clean old builds
-rm -rf dist/ mpesa-payment-gateway.zip
+rm -rf dist/woocommerce-mpesa-payment-gateway.zip
 
 # 2. Install production dependencies
 composer install --no-dev --optimize-autoloader --prefer-dist
@@ -171,7 +171,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-artifact@v3
         with:
-          name: mpesa-payment-gateway-release
+          name: woocommerce-mpesa-payment-gateway-release
           path: dist/*.zip
 ```
 
